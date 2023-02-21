@@ -1,0 +1,175 @@
+:root{
+    --corletras: #131212f1;
+    --corletrasredes: #000000;
+    --corbordasbotoes: #28c21a;   
+    --corhover: #3fc41e57;
+    --coractive: #0c440fb4;
+    --corbordatextos: #000000f1;
+    --fonteprincipal:Roboto-Regular;
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(Roboto-Regular.ttf);
+}
+/*------IMAGEM FUNDO-----*/
+body{
+    margin: 0;
+    background-image: url(img/equinofundodesktop.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+   
+}
+/*-----FOTO PRINCIPAL------*/
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -3%;
+}
+
+
+.foto__container{
+    margin: 20px 11px;
+}
+.fotoanarita{
+    width: 242px;   
+}
+
+/*-------BOTÕES MAIN--------*/
+main{
+    border: 2px solid #e9e3e30c;
+    background: #fffefe1e;
+    border-radius: 22px;
+    margin: 0 40%;
+    
+}
+/*----SECTION BOTÕES MAIN-------*/
+.botoes__principais{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 12px 30px 5px 30px;
+    text-decoration: none;
+    
+}
+button{
+    padding: 7px;
+    margin: 8px;
+    border: 1px solid var(--corbordasbotoes);  
+    border-radius: 5px;
+    font-family: var(--fonteprincipal);    
+}
+button:hover{
+    background: var(--corhover);
+    transition: 0.5s;  
+}
+button:active{
+    background: var(--coractive);
+    
+}
+.sobremim,.projetos,.cursosatuais{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--corletras);
+    
+}
+.sobremim:hover,.projetos:hover,.cursosatuais:hover{
+    color: white;
+}
+
+/*------BOTÕES REDES----*/
+.instagram,.linkedin,.github,.youtube,.emaillogo{
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--corletrasredes);
+    font-weight: bold;
+    
+}
+/*-------LOGOS----------*/
+.container__logos{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 20px 20px;   
+}
+
+/*------EFEITOS BOTÕES REDES-----*/
+/*INSTA*/
+.instabotao{
+    border: 1px solid #aa1b869a;
+}
+.instabotao:hover{
+    background: #aa1b869a;
+    
+}
+/*LINKEDIN*/
+.linkedinbotao{
+    border: 1px solid #1b1daa93;
+    
+}
+.linkedinbotao:hover{
+    background: #1b1daa93;
+    
+}
+/*GITHUB*/
+.githubbotao{
+    border: 1px solid #000000;
+   
+}
+.githubbotao:hover{
+    background: #555151e7;
+    border: #555151e7;   
+}
+/*YOUTUBE*/
+.youtubebotao{
+    border: 1px solid #e21f1f93;
+    
+}
+.youtubebotao:hover{
+    background: #df110a93;
+    
+}
+/*EMAIL*/
+.emailbotao{
+    border: 1px solid #dd9c1193;
+    
+}
+.emailbotao:hover{
+    background: #bb8d0d93;
+    
+}
+
+.instagram:hover,.linkedin:hover,.github:hover,.youtube:hover,.emaillogo:hover{
+    color: white;
+    font-weight: normal;
+}
+/*LOGOS*/
+.logoinsta__redes,.logolinkedin__redes,.logogithub__redes,.logoyoutube__redes,.emaillogo__redes{
+    margin: 0 10px;
+    font-size: 10px;
+}
+
+@media (max-width: 1000px) {
+    
+    body{ background-image: url(img/equinosfundocel.png)
+    }
+    main{
+        margin: 0 10%;
+    }
+    .container__logos{
+        display: flex;
+        flex-direction:row; 
+        padding: 155px 20px;
+        
+     }
+     .instabotao, .linkedinbotao,.githubbotao,.youtubebotao,.emailbotao{
+        display: none;  
+    }
+    .logoinsta__redes,.logolinkedin__redes,.logogithub__redes,.logoyoutube__redes,.emaillogo__redes{
+        margin: 20px;
+        
+    }
+    
+    
+}
+
+

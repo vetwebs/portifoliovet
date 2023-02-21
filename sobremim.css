@@ -1,0 +1,41 @@
+@import url(style.css);
+:root{
+    --corletras: #131212f1;
+    --corletrasredes: #000000;
+    --corbordasbotoes: #28c21a;   
+    --corhover: #3fc41e57;
+    --coractive: #0c440fb4;
+    --corbordatextos: #000000f1;
+    --fonteprincipal:Roboto-Regular;
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(Roboto-Regular.ttf);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+main{
+    font-family: Roboto-Regular;
+    margin: 0px 21%;
+    text-align: center;
+    color: rgb(238, 221, 221);
+}
+strong{
+    color: rgb(46, 165, 10);
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1000px) {
+    main{
+        margin: 0px 4%;
+    }
+    footer{
+        margin-top: 100px;
+    }
+}
