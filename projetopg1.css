@@ -1,0 +1,72 @@
+:root{
+    --corletras: #131212f1;
+    --corletrasredes: #000000;
+    --corbordasbotoes: #28c21a;   
+    --corhover: #3fc41e57;
+    --coractive: #0c440fb4;
+    --corbordatextos: #000000f1;
+    --fonteprincipal:Roboto-Regular;
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(Roboto-Regular.ttf);
+}
+/*------IMAGEM FUNDO-----*/
+body{
+    margin: 0;
+    background-image: url(img/equinofundodesktop.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+   
+}
+header a, h1{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+main{
+    height: 10em;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+main a{
+    color: rgb(2, 2, 2);
+    font-family: Roboto-Regular;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0;  
+    
+}
+button{
+    display: flex;
+    justify-content: row;
+    margin: 10px;
+    padding: 7px;
+    margin: 8px;
+    border: 1px solid var(--corbordasbotoes);  
+    border-radius: 5px;
+}
+button,main a:hover{
+    background: var(--corhover);
+    transition: 0.5s;  
+    color: white;
+}
+h1 a:hover{
+    transition: 0.5s;  
+    color: var(--corbordasbotoes)
+}
+button:active{
+    background: var(--coractive);
+    
+}
+@media (max-width: 1000px) {
+    
+    body{ background-image: url(img/equinosfundocel.png)
+    }
+}
