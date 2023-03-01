@@ -24,6 +24,7 @@ header a, h1{
     text-align: center;
     color: white;
     text-decoration: none;
+    font-family: Roboto-Regular;
 }
 main{
     height: 10em;
